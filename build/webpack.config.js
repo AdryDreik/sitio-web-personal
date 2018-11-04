@@ -36,16 +36,22 @@ module.exports = {
             }
           },
           {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
             loader: 'scss-loader',
             options: {
               sourceMap: true
             }
-          }
+          },
         ],
-        test: /\.scss$/
+        test: /\.(css|sass|scss)$/
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|gif|woff|woff2|eot|ttf|svg)$/i,
         use: [{
           loader: 'url-loader',
           options: {

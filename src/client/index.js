@@ -1,13 +1,7 @@
-import React from 'react';
-import {
-  render
-} from 'react-dom';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
+import 'typeface-roboto';
+import './assets/styles/index.scss';
 
-const App = () => {
-  return <h1> Adrian!!! </h1>
-};
-
-render(
-  <App/>,
-  document.getElementById('app')
-)
+render (<App/>, document.getElementById('app'));
